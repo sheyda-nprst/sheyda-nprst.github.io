@@ -11,6 +11,9 @@
   <meta property="og:url" content="https://sheyda-nprst.github.io/">
   <meta property="og:image" content="https://sheyda-nprst.github.io/assets/sheyda.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230e7c86'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='white'>SN</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,7 +21,7 @@
 
   <header class="nav">
     <div class="wrap nav-inner">
-      <a class="logo" href="#top" aria-label="Sheyda Niaparast, back to top">SN</a>
+      <a class="logo" href="#top" aria-label="Sheyda Niaparast, back to top">SN<span aria-hidden="true">.</span></a>
       <nav aria-label="Main">
         <ul>
           <li><a href="#about">About</a></li>
@@ -31,73 +34,92 @@
   </header>
 
   <main id="main">
-    <section class="hero wrap" id="top">
-      <div class="hero-text">
-      <p class="eyebrow">Robotics × Vision-Language Models</p>
-      <h1>Hi, I'm Sheyda.<br><span>I build AI that understands space, and helps people move through it safely.</span></h1>
-      <p class="lead">Master of AI student at the University of Technology Sydney with an Electrical Engineering background. I work where robotics, control and vision-language models meet.</p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">View projects</a>
-        <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
-        <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Robotics × Vision-Language Models</p>
+          <h1>Hi, I'm Sheyda.</h1>
+          <p class="tagline">I build AI that <span class="grad">understands space</span>, and helps people move through it safely.</p>
+          <p class="lead">Master of AI student at the University of Technology Sydney with an Electrical Engineering background. I work where robotics, control and vision-language models meet.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects <span aria-hidden="true">→</span></a>
+            <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
+          </div>
+        </div>
+
+        <figure class="vision">
+          <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="frame">
+            <img src="assets/sheyda.jpg" width="480" height="600" alt="Sheyda smiling by Sydney Harbour, with the Harbour Bridge in the background">
+            <div class="box box-bridge" aria-hidden="true"><span class="label">bridge · far · upper right</span></div>
+            <div class="box box-person" aria-hidden="true"><span class="label">person · 2 m · ahead</span></div>
+            <div class="scan" aria-hidden="true"></div>
+          </div>
+          <figcaption aria-hidden="true"><span class="live"></span>spatial-vlm · scene parsed</figcaption>
+        </figure>
       </div>
-      </div>
-      <img class="portrait" src="assets/sheyda.jpg" width="480" height="600" alt="Sheyda smiling by Sydney Harbour, with the Harbour Bridge in the background">
     </section>
 
-    <section class="wrap section" id="about" aria-labelledby="about-h">
+    <section class="wrap section reveal" id="about" aria-labelledby="about-h">
+      <p class="kicker" aria-hidden="true">01</p>
       <h2 id="about-h">About</h2>
       <div class="about-grid">
         <div>
-          <p>A model that can describe an image is impressive. A model that knows <em>the chair is two steps ahead and slightly to your left</em> can change someone's day.</p>
+          <p class="quote">A model that can describe an image is impressive. A model that knows <em>the chair is two steps ahead and slightly to your left</em> can change someone's day.</p>
           <p>Today's vision-language models are good at naming objects but often struggle with <strong>where</strong> things are: left or right, near or far, what's blocking the path. I'm working on closing that gap, with one goal in mind: <strong>helping visually impaired people navigate the world independently.</strong></p>
           <p>My engineering background means I think about the whole system, from the sensor and the circuit board to the model and the robot that acts on it.</p>
         </div>
-        <aside class="focus" aria-label="Research interests">
+        <aside class="focus" aria-label="Focus areas">
           <h3>Focus areas</h3>
           <ul>
-            <li>Spatial reasoning in VLMs</li>
-            <li>Assistive navigation</li>
-            <li>Computer vision</li>
-            <li>Robotics &amp; control</li>
+            <li><span aria-hidden="true">◎</span> Spatial reasoning in VLMs</li>
+            <li><span aria-hidden="true">◈</span> Assistive navigation</li>
+            <li><span aria-hidden="true">◉</span> Computer vision</li>
+            <li><span aria-hidden="true">⬡</span> Robotics &amp; control</li>
           </ul>
         </aside>
       </div>
     </section>
 
-    <section class="wrap section" id="projects" aria-labelledby="projects-h">
+    <section class="wrap section reveal" id="projects" aria-labelledby="projects-h">
+      <p class="kicker" aria-hidden="true">02</p>
       <h2 id="projects-h">Projects</h2>
 
       <div class="cards">
         <article class="card">
-          <img src="assets/ultrasonic.png" width="613" height="470" alt="Scatter plot of ultrasonic echo features, where each material forms its own cluster" loading="lazy">
+          <div class="thumb"><img src="assets/ultrasonic.png" width="613" height="470" alt="Scatter plot of ultrasonic echo features, where each material forms its own cluster" loading="lazy"></div>
           <div class="card-body">
+            <p class="cat">Sensing · Classification</p>
             <h3>Ultrasonic Material Classification</h3>
             <p>Identifies what an object is made of, and how thick it is, from a low-cost ultrasonic sensor's echo. Useful where cameras fail: darkness, dust, smoke or glass.</p>
-            <p class="result">70% accuracy across 18 classes · material alone 81–84%</p>
-            <ul class="tags" aria-label="Technologies"><li>Gradient Boosting</li><li>SVM</li><li>LSTM</li><li>Sensors</li></ul>
+            <p class="result"><strong>70%</strong> accuracy across 18 classes · material alone 81–84%</p>
+            <ul class="tags" aria-label="Technologies"><li>Gradient Boosting</li><li>SVM</li><li>LSTM</li></ul>
             <a class="link" href="https://github.com/sheyda-nprst/ultrasonic-material-classification">View code <span aria-hidden="true">→</span></a>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/energy.png" width="593" height="394" alt="Scatter plots of hourly electricity consumption against hour of day and price" loading="lazy">
+          <div class="thumb"><img src="assets/energy.png" width="593" height="394" alt="Scatter plots of hourly electricity consumption against hour of day and price" loading="lazy"></div>
           <div class="card-body">
+            <p class="cat">Regression · Energy</p>
             <h3>Household Energy Demand Prediction</h3>
             <p>Predicts hourly electricity use for 1,136 Norwegian homes from household characteristics, time and price, tested on homes the model has never seen.</p>
-            <p class="result">Gradient Boosting R² 0.48 on unseen households</p>
+            <p class="result"><strong>R² 0.48</strong> on unseen households with Gradient Boosting</p>
             <ul class="tags" aria-label="Technologies"><li>Random Forest</li><li>Gradient Boosting</li><li>Neural network</li></ul>
             <a class="link" href="https://github.com/sheyda-nprst/household-energy-demand-prediction">View code <span aria-hidden="true">→</span></a>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/diabetes.png" width="979" height="648" alt="Line charts showing diabetes prevalence rising with poorer self-rated health and age, and falling with income and education" loading="lazy">
+          <div class="thumb"><img src="assets/diabetes.png" width="979" height="648" alt="Line charts showing diabetes prevalence rising with poorer self-rated health and age, and falling with income and education" loading="lazy"></div>
           <div class="card-body">
+            <p class="cat">Data analysis · Health</p>
             <h3>Diabetes Risk Data Analysis</h3>
             <p>Explores the CDC health survey to find who is most at risk. Clustering uncovers a high-risk group without ever looking at the diagnosis.</p>
-            <p class="result">High-risk cluster: 74% diabetes rate vs 37% for everyone else</p>
-            <ul class="tags" aria-label="Technologies"><li>EDA</li><li>K-means</li><li>PCA</li><li>Statistics</li></ul>
+            <p class="result"><strong>74%</strong> diabetes rate in the high-risk cluster vs 37% for everyone else</p>
+            <ul class="tags" aria-label="Technologies"><li>EDA</li><li>K-means</li><li>PCA</li></ul>
             <a class="link" href="https://github.com/sheyda-nprst/diabetes-risk-data-analysis">View code <span aria-hidden="true">→</span></a>
           </div>
         </article>
@@ -106,33 +128,52 @@
       <h3 class="sub">Robotics, vision &amp; control</h3>
       <ul class="mini">
         <li>
-          <h4>Real-time VLM video captioning</h4>
-          <p>Fine-tuned BLIP on Flickr8k, compressed it and added a custom decoder layer for fast on-device scene description.</p>
+          <span class="icon" aria-hidden="true">👁</span>
+          <div>
+            <h4>Real-time VLM video captioning</h4>
+            <p>Fine-tuned BLIP on Flickr8k, compressed it and added a custom decoder layer for fast on-device scene description.</p>
+          </div>
         </li>
         <li>
-          <h4>PINN-based MPC for a robotic arm</h4>
-          <p>A physics-informed neural network learns a 2-DOF arm's dynamics; model predictive control with Laguerre functions runs it in real time.</p>
+          <span class="icon" aria-hidden="true">🦾</span>
+          <div>
+            <h4>PINN-based MPC for a robotic arm</h4>
+            <p>A physics-informed neural network learns a 2-DOF arm's dynamics; model predictive control with Laguerre functions runs it in real time.</p>
+          </div>
         </li>
         <li>
-          <h4>Real-time human pose estimation</h4>
-          <p>YOLOv8-Nano trained with custom skeleton annotations and compressed for low-latency inference.</p>
+          <span class="icon" aria-hidden="true">🧍</span>
+          <div>
+            <h4>Real-time human pose estimation</h4>
+            <p>YOLOv8-Nano trained with custom skeleton annotations and compressed for low-latency inference.</p>
+          </div>
         </li>
         <li>
-          <h4>Quadcopter modeling &amp; LQR control</h4>
-          <p>Nonlinear modeling, linearization and LQR control that stays robust under disturbances, in MATLAB/Simulink.</p>
+          <span class="icon" aria-hidden="true">🚁</span>
+          <div>
+            <h4>Quadcopter modeling &amp; LQR control</h4>
+            <p>Nonlinear modeling, linearization and LQR control that stays robust under disturbances, in MATLAB/Simulink.</p>
+          </div>
         </li>
         <li>
-          <h4>Autonomous mobile robot navigation</h4>
-          <p>Discrete PID control, path-following and obstacle avoidance for an e-puck robot in Webots.</p>
+          <span class="icon" aria-hidden="true">🤖</span>
+          <div>
+            <h4>Autonomous mobile robot navigation</h4>
+            <p>Discrete PID control, path-following and obstacle avoidance for an e-puck robot in Webots.</p>
+          </div>
         </li>
         <li>
-          <h4>University enrollment system</h4>
-          <p>Team project: a Python app with command-line and Tkinter GUI versions. <a href="https://github.com/sheyda-nprst/university-enrollment-system">View code</a></p>
+          <span class="icon" aria-hidden="true">🎓</span>
+          <div>
+            <h4>University enrollment system</h4>
+            <p>Team project: a Python app with command-line and Tkinter GUI versions. <a href="https://github.com/sheyda-nprst/university-enrollment-system">View code</a></p>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section class="wrap section" id="experience" aria-labelledby="exp-h">
+    <section class="wrap section reveal" id="experience" aria-labelledby="exp-h">
+      <p class="kicker" aria-hidden="true">03</p>
       <h2 id="exp-h">Experience &amp; education</h2>
       <ol class="timeline">
         <li>
@@ -165,13 +206,16 @@
       </ul>
     </section>
 
-    <section class="wrap section contact" id="contact" aria-labelledby="contact-h">
-      <h2 id="contact-h">Let's talk</h2>
-      <p>I'd love to hear from people working on assistive technology, embodied AI or spatial reasoning in VLMs. Research collaborations, internships and good conversations are all welcome.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:sheydaniaparast@gmail.com">Email me</a>
-        <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
-        <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
+    <section class="wrap section reveal" id="contact" aria-labelledby="contact-h">
+      <div class="contact">
+        <p class="kicker" aria-hidden="true">04</p>
+        <h2 id="contact-h">Let's build something that helps people.</h2>
+        <p>I'd love to hear from people working on assistive technology, embodied AI or spatial reasoning in VLMs. Research collaborations, internships and good conversations are all welcome.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:sheydaniaparast@gmail.com">Email me <span aria-hidden="true">→</span></a>
+          <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
+          <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
@@ -179,5 +223,18 @@
   <footer class="wrap footer">
     <p>© 2026 Sheyda Niaparast · Sydney, Australia</p>
   </footer>
+
+  <script>
+    // Fade sections in as they scroll into view
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      document.documentElement.classList.add('js');
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      }, { threshold: 0.08 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
