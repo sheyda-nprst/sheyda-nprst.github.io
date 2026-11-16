@@ -106,9 +106,6 @@ p { margin: 0 0 1em; }
 .timeline p:last-child { margin-bottom: 0; }
 .timeline li > p:not(.when):not(.where) { color: var(--muted); max-width: 70ch; }
 
-.honors { padding-left: 20px; margin: 0; }
-.honors li { margin: 6px 0; }
-
 .contact { padding-bottom: 64px; }
 .contact p { max-width: 62ch; color: var(--muted); }
 
