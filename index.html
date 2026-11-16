@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sheyda Niaparast | Robotics × Vision-Language Models</title>
+  <meta name="description" content="Master of AI student at UTS working on spatial understanding in Vision-Language Models to help visually impaired people navigate.">
+  <meta property="og:title" content="Sheyda Niaparast | Robotics × Vision-Language Models">
+  <meta property="og:description" content="AI that understands space, and helps people move through it safely.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sheyda-nprst.github.io/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230e7c86'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='white'>SN</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top" aria-label="Sheyda Niaparast, back to top">SN</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="eyebrow">Robotics × Vision-Language Models</p>
+      <h1>Hi, I'm Sheyda.<br><span>I build AI that understands space, and helps people move through it safely.</span></h1>
+      <p class="lead">Master of AI student at the University of Technology Sydney with an Electrical Engineering background. I work where robotics, control and vision-language models meet.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="wrap section" id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <div class="about-grid">
+        <div>
+          <p>A model that can describe an image is impressive. A model that knows <em>the chair is two steps ahead and slightly to your left</em> can change someone's day.</p>
+          <p>Today's vision-language models are good at naming objects but often struggle with <strong>where</strong> things are: left or right, near or far, what's blocking the path. I'm working on closing that gap, with one goal in mind: <strong>helping visually impaired people navigate the world independently.</strong></p>
+          <p>My engineering background means I think about the whole system, from the sensor and the circuit board to the model and the robot that acts on it.</p>
+        </div>
+        <aside class="focus" aria-label="Research interests">
+          <h3>Focus areas</h3>
+          <ul>
+            <li>Spatial reasoning in VLMs</li>
+            <li>Assistive navigation</li>
+            <li>Computer vision</li>
+            <li>Robotics &amp; control</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap section" id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Projects</h2>
+
+      <div class="cards">
+        <article class="card">
+          <img src="assets/ultrasonic.png" width="613" height="470" alt="Scatter plot of ultrasonic echo features, where each material forms its own cluster" loading="lazy">
+          <div class="card-body">
+            <h3>Ultrasonic Material Classification</h3>
+            <p>Identifies what an object is made of, and how thick it is, from a low-cost ultrasonic sensor's echo. Useful where cameras fail: darkness, dust, smoke or glass.</p>
+            <p class="result">70% accuracy across 18 classes · material alone 81–84%</p>
+            <ul class="tags" aria-label="Technologies"><li>Gradient Boosting</li><li>SVM</li><li>LSTM</li><li>Sensors</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/ultrasonic-material-classification">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/energy.png" width="593" height="394" alt="Scatter plots of hourly electricity consumption against hour of day and price" loading="lazy">
+          <div class="card-body">
+            <h3>Household Energy Demand Prediction</h3>
+            <p>Predicts hourly electricity use for 1,136 Norwegian homes from household characteristics, time and price, tested on homes the model has never seen.</p>
+            <p class="result">Gradient Boosting R² 0.48 on unseen households</p>
+            <ul class="tags" aria-label="Technologies"><li>Random Forest</li><li>Gradient Boosting</li><li>Neural network</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/household-energy-demand-prediction">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/diabetes.png" width="979" height="648" alt="Line charts showing diabetes prevalence rising with poorer self-rated health and age, and falling with income and education" loading="lazy">
+          <div class="card-body">
+            <h3>Diabetes Risk Data Analysis</h3>
+            <p>Explores the CDC health survey to find who is most at risk. Clustering uncovers a high-risk group without ever looking at the diagnosis.</p>
+            <p class="result">High-risk cluster: 74% diabetes rate vs 37% for everyone else</p>
+            <ul class="tags" aria-label="Technologies"><li>EDA</li><li>K-means</li><li>PCA</li><li>Statistics</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/diabetes-risk-data-analysis">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub">Robotics, vision &amp; control</h3>
+      <ul class="mini">
+        <li>
+          <h4>Real-time VLM video captioning</h4>
+          <p>Fine-tuned BLIP on Flickr8k, compressed it and added a custom decoder layer for fast on-device scene description.</p>
+        </li>
+        <li>
+          <h4>PINN-based MPC for a robotic arm</h4>
+          <p>A physics-informed neural network learns a 2-DOF arm's dynamics; model predictive control with Laguerre functions runs it in real time.</p>
+        </li>
+        <li>
+          <h4>Real-time human pose estimation</h4>
+          <p>YOLOv8-Nano trained with custom skeleton annotations and compressed for low-latency inference.</p>
+        </li>
+        <li>
+          <h4>Quadcopter modeling &amp; LQR control</h4>
+          <p>Nonlinear modeling, linearization and LQR control that stays robust under disturbances, in MATLAB/Simulink.</p>
+        </li>
+        <li>
+          <h4>Autonomous mobile robot navigation</h4>
+          <p>Discrete PID control, path-following and obstacle avoidance for an e-puck robot in Webots.</p>
+        </li>
+        <li>
+          <h4>University enrollment system</h4>
+          <p>Team project: a Python app with command-line and Tkinter GUI versions. <a href="https://github.com/sheyda-nprst/university-enrollment-system">View code</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="wrap section" id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Experience &amp; education</h2>
+      <ol class="timeline">
+        <li>
+          <p class="when">Jul 2026 – present</p>
+          <h3>Master of Artificial Intelligence</h3>
+          <p class="where">University of Technology Sydney</p>
+        </li>
+        <li>
+          <p class="when">May 2023 – Jul 2023</p>
+          <h3>Engineering Intern</h3>
+          <p class="where">Nirooye Gharb</p>
+          <p>Programmed microcontrollers for industrial control, took embedded systems from schematic to tested prototype, and designed multi-layer PCBs in Altium.</p>
+        </li>
+        <li>
+          <p class="when">May 2023 – Apr 2024</p>
+          <h3>Member, Electrical Engineering Student Scientific Association</h3>
+          <p class="where">Amirkabir University of Technology</p>
+          <p>Organized peer tutoring, faculty seminars and industry site visits.</p>
+        </li>
+        <li>
+          <p class="when">Nov 2020 – Oct 2025</p>
+          <h3>Bachelor of Electrical Engineering</h3>
+          <p class="where">Amirkabir University of Technology (Tehran Polytechnic)</p>
+        </li>
+      </ol>
+
+      <h3 class="sub">Honors</h3>
+      <ul class="honors">
+        <li><strong>Top 0.3%</strong> of 155,000+ participants in Iran's national university entrance exam</li>
+        <li><strong>Third rank</strong> in the Khwarizmi national awards</li>
+        <li>Reached the <strong>second stage</strong> of the National Mathematical Olympiad</li>
+      </ul>
+
+      <h3 class="sub">Skills</h3>
+      <ul class="tags big" aria-label="Skills">
+        <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>OpenCV</li><li>scikit-learn</li><li>C++</li><li>MATLAB / Simulink</li><li>Webots</li><li>Linux</li><li>Arduino &amp; STM32</li><li>Altium Designer</li><li>VHDL</li>
+      </ul>
+    </section>
+
+    <section class="wrap section contact" id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Let's talk</h2>
+      <p>I'd love to hear from people working on assistive technology, embodied AI or spatial reasoning in VLMs. Research collaborations, internships and good conversations are all welcome.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:sheydaniaparast@gmail.com">Email me</a>
+        <a class="btn" href="https://linkedin.com/in/sheyda-niaparast">LinkedIn</a>
+        <a class="btn" href="https://github.com/sheyda-nprst">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2026 Sheyda Niaparast · Sydney, Australia</p>
+  </footer>
+</body>
+</html>
