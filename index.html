@@ -88,6 +88,53 @@
       <h2 id="projects-h">Projects</h2>
 
       <div class="cards">
+        <article class="card feature">
+          <div class="thumb fit"><img src="assets/captioning.png" width="1170" height="442" alt="Line charts of caption scores and validation loss over 10 training epochs" loading="lazy"></div>
+          <div class="card-body">
+            <p class="cat">BSc thesis · Vision-language</p>
+            <h3>Real-time Scene Captioning on the Edge</h3>
+            <p>A low-cost ESP32-CAM streams video to a fine-tuned BLIP model that describes the scene in words, a first step toward assistive devices for visually impaired people.</p>
+            <p class="result"><strong>0.25</strong> BLEU-4 · 0.38 ROUGE-L on 1,200 unseen Flickr8k images</p>
+            <ul class="tags" aria-label="Technologies"><li>BLIP</li><li>PyTorch</li><li>ESP32-CAM</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb fit"><img src="assets/pinn-mpc.png" width="612" height="374" alt="Two robot-arm joint angles closely following their sinusoidal reference trajectories" loading="lazy"></div>
+          <div class="card-body">
+            <p class="cat">Robotics · Control</p>
+            <h3>PINN-based MPC for a Robot Arm</h3>
+            <p>Team project: a physics-informed neural network predicts a 2-link arm's motion, so model predictive control with Laguerre functions can run fast.</p>
+            <p class="result"><strong>0.014 rad</strong> mean tracking error · inputs kept within limits</p>
+            <ul class="tags" aria-label="Technologies"><li>TensorFlow</li><li>PINN</li><li>MPC</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/pinn-mpc-robot-arm">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb fit"><img src="assets/pose.png" width="975" height="600" alt="Detection accuracy (mAP50 and mAP50-95) rising over 15 training epochs" loading="lazy"></div>
+          <div class="card-body">
+            <p class="cat">Computer vision</p>
+            <h3>Real-time Pose Estimation</h3>
+            <p>Team project: live webcam pose estimation with YOLOv8 (17 body keypoints), plus a fine-tuned person and head detector.</p>
+            <p class="result"><strong>0.99</strong> mAP50 for person and head detection</p>
+            <ul class="tags" aria-label="Technologies"><li>YOLOv8</li><li>OpenCV</li><li>Roboflow</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/realtime-pose-estimation-yolov8">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb fit"><img src="assets/quadcopter.png" width="1040" height="494" alt="Quadcopter altitude, x, y and yaw following step commands" loading="lazy"></div>
+          <div class="card-body">
+            <p class="cat">Control systems</p>
+            <h3>Quadcopter Modelling &amp; LQR Control</h3>
+            <p>Team project: nonlinear modelling, linearization, LQR tracking with integral action and state observers for a quadcopter.</p>
+            <p class="result"><strong>0.4%</strong> overshoot · zero steady-state error</p>
+            <ul class="tags" aria-label="Technologies"><li>MATLAB</li><li>Simulink</li><li>LQR</li></ul>
+            <a class="link" href="https://github.com/sheyda-nprst/quadcopter-lqr-control">View code <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
         <article class="card">
           <div class="thumb"><img src="assets/ultrasonic.png" width="613" height="470" alt="Scatter plot of ultrasonic echo features, where each material forms its own cluster" loading="lazy"></div>
           <div class="card-body">
@@ -124,52 +171,6 @@
           </div>
         </article>
       </div>
-
-      <h3 class="sub">Robotics, vision &amp; control</h3>
-      <ul class="mini">
-        <li>
-          <span class="icon" aria-hidden="true">👁</span>
-          <div>
-            <h4>Real-time VLM video captioning</h4>
-            <p>Fine-tuned BLIP on Flickr8k, compressed it and added a custom decoder layer for fast on-device scene description.</p>
-          </div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true">🦾</span>
-          <div>
-            <h4>PINN-based MPC for a robotic arm</h4>
-            <p>Team project: a physics-informed neural network learns a 2-DOF arm's dynamics, and model predictive control with Laguerre functions tracks a reference within input limits. <a href="https://github.com/sheyda-nprst/pinn-mpc-robot-arm">View code</a></p>
-          </div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true">🧍</span>
-          <div>
-            <h4>Real-time human pose estimation</h4>
-            <p>Team project: live webcam pose estimation with YOLOv8-Nano (17 body keypoints), plus a fine-tuned YOLOv8 person and head detector reaching 0.99 mAP50. <a href="https://github.com/sheyda-nprst/realtime-pose-estimation-yolov8">View code</a></p>
-          </div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true">🚁</span>
-          <div>
-            <h4>Quadcopter modeling &amp; LQR control</h4>
-            <p>Team project: nonlinear modeling, linearization, LQR tracking control with integral action and state observers, in MATLAB/Simulink. <a href="https://github.com/sheyda-nprst/quadcopter-lqr-control">View code</a></p>
-          </div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true">🤖</span>
-          <div>
-            <h4>Autonomous mobile robot navigation</h4>
-            <p>Discrete PID control, path-following and obstacle avoidance for an e-puck robot in Webots.</p>
-          </div>
-        </li>
-        <li>
-          <span class="icon" aria-hidden="true">🎓</span>
-          <div>
-            <h4>University enrollment system</h4>
-            <p>Team project: a Python app with command-line and Tkinter GUI versions. <a href="https://github.com/sheyda-nprst/university-enrollment-system">View code</a></p>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <section class="wrap section reveal" id="experience" aria-labelledby="exp-h">
